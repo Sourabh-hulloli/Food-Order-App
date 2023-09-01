@@ -19,7 +19,7 @@ const cartReducer = (state, action) => {
   return defaultCartState;
 };
 
-const CardProvider = (props) => {
+const CartProvider = (props) => {
   const [cartState, dispatchCartAction] = useReducer(
     cartReducer,
     defaultCartState
@@ -53,4 +53,4 @@ const CardProvider = (props) => {
   );
 };
 
-export default CardProvider;
+export default CartProvider;
